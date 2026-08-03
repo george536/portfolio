@@ -1496,6 +1496,14 @@ a {
     object-fit: cover;
 }
 
+.project-page .media-grid > img,
+.project-page .media-item img {
+    display: block;
+    object-fit: contain;
+    object-position: center;
+    background: var(--ink-950);
+}
+
 .project-page .media-item h6,
 .project-page .video-item h6 {
     margin: 0;
