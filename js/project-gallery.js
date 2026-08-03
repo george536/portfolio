@@ -9,7 +9,7 @@ if (galleryImages.length > 0) {
   lightbox.innerHTML = `
     <button class="gallery-lightbox__close" type="button" aria-label="Close image preview">&times;</button>
     <button class="gallery-lightbox__nav gallery-lightbox__nav--previous" type="button" aria-label="View previous image">
-      <span aria-hidden="true">&#8592;</span>
+      <svg class="direction-icon direction-icon--left" viewBox="0 0 20 20" aria-hidden="true"><path d="M16.5 10h-13M9 4.5 3.5 10 9 15.5"/></svg>
     </button>
     <figure class="gallery-lightbox__figure">
       <img class="gallery-lightbox__image" alt="">
@@ -19,7 +19,7 @@ if (galleryImages.length > 0) {
       </figcaption>
     </figure>
     <button class="gallery-lightbox__nav gallery-lightbox__nav--next" type="button" aria-label="View next image">
-      <span aria-hidden="true">&#8594;</span>
+      <svg class="direction-icon direction-icon--right" viewBox="0 0 20 20" aria-hidden="true"><path d="M3.5 10h13M11 4.5 16.5 10 11 15.5"/></svg>
     </button>
   `;
 

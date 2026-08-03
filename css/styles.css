@@ -342,6 +342,31 @@ a {
     transform: translateY(-3px);
 }
 
+.direction-icon {
+    flex: 0 0 auto;
+    width: 1.15em;
+    height: 1.15em;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.35;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: transform 180ms ease;
+}
+
+.button:hover .direction-icon--right,
+.text-link:hover .direction-icon--right {
+    transform: translateX(4px);
+}
+
+.direction-link:hover .direction-icon--external {
+    transform: translate(2px, -2px);
+}
+
+.site-footer a:hover .direction-icon--up {
+    transform: translateY(-3px);
+}
+
 .button-primary {
     background: var(--cyan);
     color: var(--ink-950);
@@ -371,6 +396,9 @@ a {
 }
 
 .hero-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     color: var(--muted);
     font-size: 0.82rem;
     font-weight: 700;
@@ -915,14 +943,6 @@ a {
     text-decoration: none;
 }
 
-.text-link span {
-    transition: transform 180ms ease;
-}
-
-.text-link:hover span {
-    transform: translateX(5px);
-}
-
 .non-linked-image {
     cursor: default;
 }
@@ -1199,6 +1219,9 @@ a {
 }
 
 .contact-actions > a:not(.button) {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
     color: #073744;
     font-size: 0.88rem;
     font-weight: 700;
@@ -1240,6 +1263,12 @@ a {
     color: var(--cyan);
 }
 
+.site-footer a {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+}
+
 /* Existing project pages */
 .project-page {
     background: var(--ink-900);
@@ -1268,14 +1297,19 @@ a {
     transition: border-color 180ms ease, transform 180ms ease;
 }
 
-.project-page .floating-home::before {
-    content: "\2190";
+.project-page .floating-home .direction-icon {
+    width: 17px;
+    height: 17px;
     color: var(--cyan);
 }
 
 .project-page .floating-home:hover {
     border-color: rgba(102, 227, 255, 0.46);
     transform: translateY(-2px);
+}
+
+.project-page .floating-home:hover .direction-icon {
+    transform: translateX(-3px);
 }
 
 .project-page .hero {
