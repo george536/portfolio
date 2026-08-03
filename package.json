@@ -1,0 +1,14 @@
+{
+  "name": "george-yazji-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "George Yazji's portfolio, deployed through Cloudflare Pages.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check-site.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -6,20 +6,26 @@
     <meta name="description" content="Activate The Ball game project by George Yazji">
     <meta name="author" content="George Yazji">
     <title>Activate The Ball</title>
+    <link rel="canonical" href="https://georgeyazji.com/projects/ActivateTheBall/">
     <link rel="stylesheet" href="../../css/styles.css">
+    <script src="../../js/project-gallery.js" defer></script>
 </head>
-<body>
+<body class="project-page">
     
-    <a href="../../index.html" class="floating-home">Portfolio Overview</a>
+    <a href="../../index.html" class="floating-home">
+        <svg class="direction-icon direction-icon--left" viewBox="0 0 20 20" aria-hidden="true"><path d="M16.5 10h-13M9 4.5 3.5 10 9 15.5"/></svg>
+        Portfolio Overview
+    </a>
     
     <!-- Header Section -->
     <section id="home" class="hero" style="background: url('media/header.jpg') no-repeat center
     center/cover;">
 		<div class="hero-content">
+            <p class="project-kicker">Game Development Case Study</p>
             <h1 class="title">Activate The Ball</h1>
-            <h3>By George Yazji</h3>
-            <br>
-            <h4><a href="#about" target="_blank">Learn More</a></h4>
+            <h3>A physics-first Unity 2D game with progressive level design.</h3>
+            <div class="project-tags"><span>C#</span><span>Unity 2D</span><span>Physics</span><span>UI Design</span></div>
+            <h4><a href="#about">Learn More</a></h4>
         </div>
         <div class="mouse-icon"><div class="wheel"></div></div>
     </section>
@@ -27,18 +33,14 @@
     <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
-            <h2>About This Game</h2>
+            <h2>What I Built</h2>
             <ul class="about-list">
-                <li>Developed in Unity 2D using C# and implemented 2D physics engine using
-                collisions detection and response.</li>
-                <li>Designed and arranged different levels of difficulties along with adding UI
-                elements to create the game’s user interface.</li>
-                <br>
-                <li>This game marked my first experience with game design using Unity.</li>
-                <li>The objective of Activate The Ball is to make the ball bounce off the table the
-                same number of times as the target.</li>
-                <li>Successfully completing the objective advances the user to the next level.</li>
-                <li>New levels increase in difficulty by introducing moving obstacles.</li>
+                <li>Developed the game in Unity 2D with C#, implementing collision detection and response through the 2D physics engine.</li>
+                <li>Designed and arranged progressively harder levels and created the user-interface elements that guide play.</li>
+                <li>Used the project as my first end-to-end experience designing and building a game in Unity.</li>
+                <li>Defined a clear core mechanic: make the ball bounce off the table exactly as many times as the displayed target.</li>
+                <li>Built level progression so completing the objective immediately advances the player.</li>
+                <li>Increased difficulty over time with moving obstacles that require better timing and control.</li>
             </ul>
         </div>
     </section>
@@ -46,7 +48,7 @@
     <!-- Project Media Section -->
     <section id="portfolio" class="section">
         <div class="container">
-            <h2>Project Media</h2>
+            <h2>Game Gallery</h2>
             <div class="media-grid">
                 <img src="media/1.jpg" alt="Screenshot 1">
                 <img src="media/header.jpg" alt="Screenshot 2">
