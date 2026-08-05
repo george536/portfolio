@@ -43,7 +43,9 @@ for (const { path: htmlPath } of htmlFiles) {
     }
 
     const decodedPath = decodeURIComponent(pathWithoutQuery);
-    const referencedPath = resolve(dirname(htmlPath), decodedPath);
+    const referencedPath = decodedPath.startsWith("/")
+      ? resolve(process.cwd(), decodedPath.slice(1))
+      : resolve(dirname(htmlPath), decodedPath);
     const candidatePath = decodedPath.endsWith("/")
       ? join(referencedPath, "index.html")
       : referencedPath;
