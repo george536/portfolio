@@ -1327,9 +1327,14 @@ a {
 
 .project-page .hero.trac-hero {
     background-color: var(--ink-950);
-    background-image: url('../projects/Trac/media/trac-logo.png');
-    background-repeat: no-repeat;
-    background-size: min(78vw, 850px) auto !important;
+    background-image: radial-gradient(ellipse at center, #10243f, #050b14 75%);
+}
+
+.project-page .trac-hero-logo {
+    width: clamp(180px, 32vw, 340px);
+    height: auto;
+    margin: 0 auto 24px;
+    object-fit: contain;
 }
 
 .project-page .hero::before {
@@ -1545,12 +1550,15 @@ a {
     background: var(--ink-950);
 }
 
-.trac-domain-link {
+.project-page .trac-hero .trac-domain-link {
     display: inline-flex;
     align-items: center;
     gap: 0.35em;
     color: var(--cyan);
-    font-size: 0.42em;
+    margin-top: 8px;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: normal;
     text-decoration: underline;
     text-underline-offset: 0.2em;
     white-space: nowrap;
