@@ -1325,6 +1325,13 @@ a {
     background-size: cover !important;
 }
 
+.project-page .hero.trac-hero {
+    background-color: var(--ink-950);
+    background-image: url('../projects/Trac/media/trac-logo.png');
+    background-repeat: no-repeat;
+    background-size: min(78vw, 850px) auto !important;
+}
+
 .project-page .hero::before {
     content: "";
     position: absolute;
