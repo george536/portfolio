@@ -1556,11 +1556,15 @@ a {
     gap: 0.35em;
     color: var(--cyan);
     margin-top: 8px;
-    font-size: 1rem;
+    padding: 11px 16px;
+    border: 1px solid rgba(24, 200, 238, 0.3);
+    border-radius: 999px;
+    background: rgba(24, 200, 238, 0.06);
+    font-size: 0.82rem;
+    font-weight: 750;
     line-height: 1.5;
     letter-spacing: normal;
-    text-decoration: underline;
-    text-underline-offset: 0.2em;
+    text-decoration: none;
     white-space: nowrap;
 }
 
