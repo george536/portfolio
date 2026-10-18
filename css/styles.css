@@ -1568,6 +1568,37 @@ a {
     white-space: nowrap;
 }
 
+.parking-workflow {
+    margin-top: 56px;
+    scroll-margin-top: 90px;
+}
+
+.parking-workflow > h2:not(:first-child) {
+    margin-top: 56px;
+}
+
+.parking-workflow-steps {
+    display: grid;
+    gap: 24px;
+    padding-left: 26px;
+    margin: 32px 0;
+}
+
+.parking-workflow-steps li {
+    padding-left: 8px;
+}
+
+.parking-workflow-steps h3 {
+    margin: 0 0 8px;
+    color: var(--dark-text);
+    font-size: 1.2rem;
+}
+
+.parking-workflow-steps p {
+    margin: 0;
+    max-width: 85ch;
+}
+
 .trac-gallery-links {
     display: flex;
     flex-wrap: wrap;

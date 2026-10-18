@@ -20,7 +20,7 @@
             <p class="project-kicker">Computer Vision &amp; Simulation &middot; July &ndash; October 2024</p>
             <h1 class="title">Parking-space detection in CARLA</h1>
             <h3>From simulated scenes to labeled training data and a vision model.</h3>
-            <div class="project-tags"><span>C++</span><span>CARLA</span><span>PyTorch</span><span>ResNet-50</span></div>
+            <div class="project-tags"><span>C++ / Python</span><span>CARLA</span><span>OpenCV</span><span>gRPC</span><span>PyTorch</span></div>
             <h4><a href="#about">Explore the work</a></h4>
         </div>
     </section>
@@ -31,10 +31,20 @@
                 <li>Built a <strong>C++</strong> pipeline in CARLA to generate and label <strong>10,000+</strong> bird&rsquo;s-eye-view training images.</li>
                 <li>Developed a ResNet-50 model in <strong>PyTorch</strong> for parking-space detection.</li>
             </ul>
-            <h2>Data and model workflow</h2>
-            <p>CARLA simulation &rarr; C++ image generation and labeling &rarr; training dataset &rarr; PyTorch ResNet-50 parking-space detection.</p>
-            <h2>Project scope</h2>
-            <p>The completed work covers data generation and parking-space detection. Reinforcement learning for autonomous parking was planned but not completed. No measured model-accuracy result is published here.</p>
+            <div class="parking-workflow" id="workflow">
+                <h2>From simulator cameras to a labeled dataset</h2>
+                <p>The public implementation connects Python vision tools to C++ capture automation through gRPC. It pairs rendered images with vehicle poses and parking-space geometry, building the data foundation for parking-space detection.</p>
+                <ol class="parking-workflow-steps">
+                    <li><h3>Build a surround view</h3><p>Four CARLA cameras capture the front, rear, left, and right of the vehicle. Python and OpenCV apply perspective transforms, rotate and flip the views, and assemble them into a shared Pygame bird&rsquo;s-eye preview.</p></li>
+                    <li><h3>Tune camera alignment</h3><p>Tkinter calibration panels expose camera position and rotation, source/destination transform settings, output dimensions, and placement offsets. These controls help align parking markings across the stitched views.</p></li>
+                    <li><h3>Define parking-space geometry</h3><p>An interactive labeling tool uses RGB and depth cameras to turn selected image points into world coordinates. Each parking space is saved as an ID and four corners in JSON, then can be drawn back into the simulation for inspection.</p></li>
+                    <li><h3>Automate varied captures</h3><p>The C++ capture tool moves the vehicle through a parking-lot grid and sweeps its heading from &minus;180&deg; to 180&deg; in 10&deg; steps. Collision and position checks gate capture, while received frames are matched to the target location.</p></li>
+                    <li><h3>Pair images with structured metadata</h3><p>A Protocol Buffers contract carries image data, vehicle position/orientation, and the bird&rsquo;s-eye field boundary between Python and C++. The C++ processor saves images and records poses plus intersecting parking-space IDs in <code>transforms.json</code>. A Python SQLite builder organizes image metadata and parking-space corners into separate tables.</p></li>
+                </ol>
+                <h2>Model work and project scope</h2>
+                <p>I developed a ResNet-50 model in PyTorch for parking-space detection. The public repository linked below exposes the capture, calibration, labeling, and dataset-building tools; its current snapshot does not include the ResNet training or evaluation implementation.</p>
+                <p>Reinforcement learning for autonomous parking was planned but not completed. The project demonstrates the perception and data-preparation foundation rather than a completed self-parking controller. No measured model-accuracy result is published here.</p>
+            </div>
             <div class="project-links">
                 <h4><a href="https://github.com/george536/Self-Parking-Car" target="_blank" rel="noopener noreferrer">Explore the code on GitHub</a></h4>
             </div>
