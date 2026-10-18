@@ -10,7 +10,7 @@ Replace the bio with:
 
 > Backend software engineer at SOTI | Co-founder & lead engineer at Trac | C#/.NET, Python, SQL, Firebase
 
-Keep the website as `https://georgeyazji.com/`. Use Hamilton, Ontario, Canada for location consistency.
+Keep the website as `https://georgeyazji.com/`. Use Toronto, Ontario, Canada for location consistency.
 
 ## Suggested pins
 
