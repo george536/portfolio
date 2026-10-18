@@ -19,10 +19,10 @@
     </a>
 
     <!-- Page Header -->
-    <section id="home" class="hero" style="background: url('media/1.png') no-repeat center center/cover;">
+    <section id="home" class="hero" style="background: url('media/commuter-1.png') no-repeat center center/cover;">
         <div class="hero-content">
             <p class="project-kicker">Real-Time Backend &amp; Product Engineering</p>
-            <h1 class="title">Trac (tracinc.ca)</h1>
+            <h1 class="title">Trac <a class="trac-domain-link" href="https://tracinc.ca" target="_blank" rel="noopener noreferrer">tracinc.ca <svg class="direction-icon direction-icon--external" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6M8 6h6v6"/></svg></a></h1>
             <h3>A profitable real-time shuttle platform serving 2,500+ weekly active users.</h3>
             <div class="project-tags"><span>Firebase</span><span>Python</span><span>scikit-learn</span><span>Flutter</span><span>Real-time systems</span></div>
             <h4><a href="#about" class="learn-more-button">Learn More</a></h4>
@@ -50,33 +50,86 @@
         </div>
     </section>
 
-    <!-- Project Media Section -->
+    <!-- Product galleries: current assets from tracinc.ca -->
     <section id="portfolio" class="section">
         <div class="container">
-            <h2>Product Gallery</h2>
-            <div class="media-grid">
-                <div class="media-item">
-                    <img src="media/1.png" alt="Trac commuter and driver mobile app interfaces">
+            <h2>Product gallery</h2>
+            <p>Explore the commuter, driver, and admin experiences. Select any image for a full-size preview.</p>
+            <nav class="trac-gallery-links" aria-label="Product galleries"><a href="#commuter">Commuter</a><a href="#driver">Driver</a><a href="#admin">Admin</a></nav>
+            <section id="commuter" class="trac-gallery-group" aria-labelledby="commuter-heading">
+                <h3 id="commuter-heading">Commuter app</h3>
+                <p>Live shuttle locations, stop ETAs, occupancy, and service information for riders.</p>
+                <div class="media-grid trac-gallery--phone">
+                    <div class="media-item">
+                        <img src="media/commuter-1.png" alt="Live buses and route ETAs" loading="lazy" decoding="async">
+                        <h6>Live buses and route ETAs</h6>
+                    </div>
+                    <div class="media-item">
+                        <img src="media/commuter-2.png" alt="Commuter app — screen 2" loading="lazy" decoding="async">
+                        <h6>Commuter app — screen 2</h6>
+                    </div>
+                    <div class="media-item">
+                        <img src="media/commuter-3.png" alt="Commuter app — screen 3" loading="lazy" decoding="async">
+                        <h6>Commuter app — screen 3</h6>
+                    </div>
+                    <div class="media-item">
+                        <img src="media/commuter-4.png" alt="Commuter app — screen 4" loading="lazy" decoding="async">
+                        <h6>Commuter app — screen 4</h6>
+                    </div>
+                    <div class="media-item">
+                        <img src="media/commuter-5.png" alt="Commuter app — screen 5" loading="lazy" decoding="async">
+                        <h6>Commuter app — screen 5</h6>
+                    </div>
+                    <div class="media-item">
+                        <img src="media/commuter-6.png" alt="Commuter app — screen 6" loading="lazy" decoding="async">
+                        <h6>Commuter app — screen 6</h6>
+                    </div>
                 </div>
-                <div class="media-item">
-                    <img src="media/2.jpg" alt="Trac shuttle map interface">
+            </section>
+            <section id="driver" class="trac-gallery-group" aria-labelledby="driver-heading">
+                <h3 id="driver-heading">Driver app</h3>
+                <p>Tablet controls for starting routes and broadcasting vehicle location, occupancy, and availability.</p>
+                <div class="media-grid trac-gallery--wide">
+                    <div class="media-item">
+                        <img src="media/driver-1.png" alt="Driver home screen" loading="lazy" decoding="async">
+                        <h6>Driver home screen</h6>
+                    </div>
+                    <div class="media-item">
+                        <img src="media/driver-2.png" alt="Driver app — screen 2" loading="lazy" decoding="async">
+                        <h6>Driver app — screen 2</h6>
+                    </div>
+                    <div class="media-item">
+                        <img src="media/driver-3.png" alt="Driver app — screen 3" loading="lazy" decoding="async">
+                        <h6>Driver app — screen 3</h6>
+                    </div>
                 </div>
-                <div class="media-item">
-                    <img src="media/3.jpg" alt="Trac mobile application screen">
+            </section>
+            <section id="admin" class="trac-gallery-group" aria-labelledby="admin-heading">
+                <h3 id="admin-heading">Admin dashboard</h3>
+                <p>Tools for service alerts, routes and stops, operational reporting, and rider feedback.</p>
+                <div class="media-grid trac-gallery--wide">
+                    <div class="media-item">
+                        <img src="media/admin-1.jpeg" alt="Send service notifications" loading="lazy" decoding="async">
+                        <h6>Send service notifications</h6>
+                    </div>
+                    <div class="media-item">
+                        <img src="media/admin-2.jpeg" alt="Manage routes and operating hours" loading="lazy" decoding="async">
+                        <h6>Manage routes and operating hours</h6>
+                    </div>
+                    <div class="media-item">
+                        <img src="media/admin-3.jpeg" alt="Edit stop details" loading="lazy" decoding="async">
+                        <h6>Edit stop details</h6>
+                    </div>
+                    <div class="media-item">
+                        <img src="media/admin-4.jpeg" alt="Service reports and data exports" loading="lazy" decoding="async">
+                        <h6>Service reports and data exports</h6>
+                    </div>
+                    <div class="media-item">
+                        <img src="media/admin-5.jpeg" alt="Rider feedback" loading="lazy" decoding="async">
+                        <h6>Rider feedback</h6>
+                    </div>
                 </div>
-                <div class="media-item">
-                    <img src="media/4.jpg" alt="Trac route and shuttle information">
-                </div>
-                <div class="media-item">
-                    <img src="media/5.jpg" alt="Trac application feature screen">
-                </div>
-                <div class="media-item">
-                    <img src="media/6.jpg" alt="Trac mobile product screen">
-                </div>
-                <div class="media-item">
-                    <img src="media/7.jpg" alt="Trac shuttle tracking experience">
-                </div>
-            </div>
+            </section>
         </div>
     </section>
 </body>

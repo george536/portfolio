@@ -1538,6 +1538,42 @@ a {
     background: var(--ink-950);
 }
 
+.trac-domain-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+    color: var(--cyan);
+    font-size: 0.42em;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    white-space: nowrap;
+}
+
+.trac-gallery-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+    margin: 24px 0;
+    color: var(--cyan);
+}
+
+.trac-gallery-group {
+    margin-top: 52px;
+    scroll-margin-top: 32px;
+}
+
+.project-page .trac-gallery--phone .media-item img {
+    aspect-ratio: 954 / 2063;
+}
+
+.project-page .trac-gallery--wide {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+}
+
+.project-page .trac-gallery--wide .media-item img {
+    aspect-ratio: 16 / 10;
+}
+
 .project-page .gallery-preview-trigger {
     cursor: zoom-in;
     transition: filter 180ms ease;
