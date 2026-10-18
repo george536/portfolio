@@ -1,5 +1,11 @@
 # Suggested self-parking project media
 
+## Added October 18, 2026
+
+Four supplied development screenshots now illustrate the top-down vehicle view, stitched camera/alignment preview, camera and bird's-eye calibration controls, and captured image sequence with a transforms file. They are captioned as development/capture evidence, not model predictions or ground-truth label visualizations. Original screenshots are preserved under `projects/SelfParking/media/`.
+
+For a future polish pass, original image exports would be cleaner than the File Explorer and screenshot-editor captures. A ground-truth/prediction comparison and a short capture demo would add the most new evidence.
+
 Add these when available, using original project output rather than illustrative results that could be mistaken for measured output.
 
 1. **A labeled bird's-eye-view image:** show a real input and its corresponding parking-space labels side by side. Caption what the labels mean.
