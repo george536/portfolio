@@ -41,9 +41,6 @@
                     <li><h3>Automate varied captures</h3><p>The C++ capture tool moves the vehicle through a parking-lot grid and sweeps its heading from &minus;180&deg; to 180&deg; in 10&deg; steps. Collision and position checks gate capture, while received frames are matched to the target location.</p></li>
                     <li><h3>Pair images with structured metadata</h3><p>A Protocol Buffers contract carries image data, vehicle position/orientation, and the bird&rsquo;s-eye field boundary between Python and C++. The C++ processor saves images and records poses plus intersecting parking-space IDs in <code>transforms.json</code>. A Python SQLite builder organizes image metadata and parking-space corners into separate tables.</p></li>
                 </ol>
-                <h2>Model work and project scope</h2>
-                <p>I developed a ResNet-50 model in PyTorch for parking-space detection. The public repository linked below exposes the capture, calibration, labeling, and dataset-building tools; its current snapshot does not include the ResNet training or evaluation implementation.</p>
-                <p>Reinforcement learning for autonomous parking was planned but not completed. The project demonstrates the perception and data-preparation foundation rather than a completed self-parking controller. No measured model-accuracy result is published here.</p>
             </div>
             <div class="project-links">
                 <h4><a href="https://github.com/george536/Self-Parking-Car" target="_blank" rel="noopener noreferrer">Explore the code on GitHub</a></h4>
