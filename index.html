@@ -24,7 +24,7 @@
     </script>
     <link rel="canonical" href="https://georgeyazji.com/">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="stylesheet" href="css/styles.css?v=skills-1">
+    <link rel="stylesheet" href="css/styles.css?v=layout-2">
 </head>
 <body class="home-page">
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -41,8 +41,8 @@
 
             <nav aria-label="Primary navigation">
                 <ul class="primary-nav">
-                    <li><a href="#expertise">Skills</a></li>
                     <li><a href="#experience">Experience</a></li>
+                    <li><a href="#expertise">Skills</a></li>
                     <li><a href="#work">Work</a></li>
                     <li><a href="#about">About</a></li>
                 </ul>
@@ -104,7 +104,11 @@
             </div>
         </section>
 
-        <section class="proof-strip" aria-label="Selected engineering outcomes">
+        <section class="proof-strip" id="impact" aria-labelledby="impact-heading">
+            <div class="container impact-heading">
+                <h2 id="impact-heading">Impact at a glance</h2>
+                <p>Production reach at SOTI and real-time performance at Trac.</p>
+            </div>
             <div class="container proof-grid">
                 <article>
                     <strong>~100K</strong>
@@ -112,7 +116,7 @@
                 </article>
                 <article>
                     <strong>2,500+</strong>
-                    <span>weekly active users across Android and iOS</span>
+                    <span>weekly active Trac users across Android and iOS</span>
                 </article>
                 <article>
                     <strong>5 sec</strong>
@@ -122,80 +126,6 @@
                     <strong>~30 sec</strong>
                     <span>average arrival-prediction error at Trac</span>
                 </article>
-            </div>
-        </section>
-
-        <section class="section-block" id="expertise">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow">Technical skills</p>
-                    <h2>Skills &amp; technologies</h2>
-                </div>
-                <div class="expertise-grid skills-grid">
-                    <article class="expertise-card skill-card">
-                        <h3>Backend development</h3>
-                        <ul class="tag-list" aria-label="Backend development">
-                            <li>C# / .NET</li>
-                            <li>Python</li>
-                            <li>REST APIs</li>
-                            <li>SQL Server</li>
-                            <li>Authentication</li>
-                        </ul>
-                    </article>
-                    <article class="expertise-card skill-card">
-                        <h3>Data & real-time systems</h3>
-                        <ul class="tag-list" aria-label="Data & real-time systems">
-                            <li>Firebase</li>
-                            <li>Firestore</li>
-                            <li>Realtime Database</li>
-                            <li>Event pipelines</li>
-                            <li>Data synchronization</li>
-                            <li>Offline recovery</li>
-                        </ul>
-                    </article>
-                    <article class="expertise-card skill-card">
-                        <h3>Mobile development</h3>
-                        <ul class="tag-list" aria-label="Mobile development">
-                            <li>Android</li>
-                            <li>Kotlin</li>
-                            <li>Java</li>
-                            <li>Flutter</li>
-                            <li>Dart</li>
-                        </ul>
-                    </article>
-                    <article class="expertise-card skill-card">
-                        <h3>Machine learning & vision</h3>
-                        <ul class="tag-list" aria-label="Machine learning & vision">
-                            <li>PyTorch</li>
-                            <li>scikit-learn</li>
-                            <li>OpenCV</li>
-                            <li>Google ML Kit</li>
-                            <li>ResNet-50</li>
-                        </ul>
-                    </article>
-                    <article class="expertise-card skill-card">
-                        <h3>Additional languages</h3>
-                        <ul class="tag-list" aria-label="Additional languages">
-                            <li>C++</li>
-                            <li>SQL</li>
-                            <li>JavaScript</li>
-                            <li>TypeScript</li>
-                        </ul>
-                    </article>
-                    <article class="expertise-card skill-card">
-                        <h3>Tools & workflow</h3>
-                        <ul class="tag-list" aria-label="Tools & workflow">
-                            <li>Git</li>
-                            <li>Jenkins</li>
-                            <li>Gerrit</li>
-                            <li>CI/CD</li>
-                            <li>Linux</li>
-                            <li>CARLA</li>
-                            <li>Android Studio</li>
-                            <li>Xcode</li>
-                        </ul>
-                    </article>
-                </div>
             </div>
         </section>
 
@@ -290,6 +220,80 @@
                         <ul class="outcome-list">
                             <li>Applied design patterns, testing frameworks, and software-development lifecycle practices to create scalable automation.</li>
                             <li>Worked hands-on with server builds, patching, Splunk, ServiceNow, and Ansible inventory.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-block" id="expertise">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Technical skills</p>
+                    <h2>Skills &amp; technologies</h2>
+                </div>
+                <div class="expertise-grid skills-grid">
+                    <article class="expertise-card skill-card">
+                        <h3>Backend development</h3>
+                        <ul class="tag-list" aria-label="Backend development">
+                            <li>C# / .NET</li>
+                            <li>Python</li>
+                            <li>REST APIs</li>
+                            <li>SQL Server</li>
+                            <li>Authentication</li>
+                        </ul>
+                    </article>
+                    <article class="expertise-card skill-card">
+                        <h3>Data & real-time systems</h3>
+                        <ul class="tag-list" aria-label="Data & real-time systems">
+                            <li>Firebase</li>
+                            <li>Firestore</li>
+                            <li>Realtime Database</li>
+                            <li>Event pipelines</li>
+                            <li>Data synchronization</li>
+                            <li>Offline recovery</li>
+                        </ul>
+                    </article>
+                    <article class="expertise-card skill-card">
+                        <h3>Mobile development</h3>
+                        <ul class="tag-list" aria-label="Mobile development">
+                            <li>Android</li>
+                            <li>Kotlin</li>
+                            <li>Java</li>
+                            <li>Flutter</li>
+                            <li>Dart</li>
+                        </ul>
+                    </article>
+                    <article class="expertise-card skill-card">
+                        <h3>Machine learning & vision</h3>
+                        <ul class="tag-list" aria-label="Machine learning & vision">
+                            <li>PyTorch</li>
+                            <li>scikit-learn</li>
+                            <li>OpenCV</li>
+                            <li>Google ML Kit</li>
+                            <li>ResNet-50</li>
+                        </ul>
+                    </article>
+                    <article class="expertise-card skill-card">
+                        <h3>Additional languages</h3>
+                        <ul class="tag-list" aria-label="Additional languages">
+                            <li>C++</li>
+                            <li>SQL</li>
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                        </ul>
+                    </article>
+                    <article class="expertise-card skill-card">
+                        <h3>Tools & workflow</h3>
+                        <ul class="tag-list" aria-label="Tools & workflow">
+                            <li>Git</li>
+                            <li>Jenkins</li>
+                            <li>Gerrit</li>
+                            <li>CI/CD</li>
+                            <li>Linux</li>
+                            <li>CARLA</li>
+                            <li>Android Studio</li>
+                            <li>Xcode</li>
                         </ul>
                     </article>
                 </div>

@@ -550,6 +550,22 @@ a {
     border-right: 1px solid var(--border);
 }
 
+.impact-heading {
+    padding-block: 30px 22px;
+}
+
+.impact-heading h2 {
+    margin: 0 0 8px;
+    color: var(--white);
+    font-size: 1.35rem;
+}
+
+.impact-heading p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
 .proof-grid strong {
     color: var(--white);
     font-size: clamp(1.8rem, 3vw, 2.65rem);
