@@ -33,7 +33,7 @@ Use four strong pins rather than filling every slot. Unpin the profile configura
 
 **RC-Car-Project**
 
-> OpenCV/PID path following and Gipps car-following across 4 Raspberry Pi vehicles over MQTT, achieving 90–95% path following and 5–10 cm gaps.
+> OpenCV/PID path following and Gipps car-following across 4 Raspberry Pi vehicles over MQTT, achieving 95% path following and 10 cm gaps.
 
 **Splines-and-3D-lines-Library-for-Unreal-Engine-4**
 

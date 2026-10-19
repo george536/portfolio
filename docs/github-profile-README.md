@@ -4,7 +4,7 @@
 
 I build production backend and real-time systems at **SOTI** and **Trac**. My work spans C#/.NET and Python services, SQL/database integrations, Firebase real-time data, reliability under poor connectivity, and applied ML.
 
-At SOTI, I own production feature delivery for Snap across backend/server and Android. I also co-founded Trac, where I work as **Lead Software Engineer (part-time)** on a shuttle-tracking platform used at McMaster University.
+At SOTI, I own production feature delivery for Snap across backend/server and Android. At Trac, I am **Lead Software Engineer & Co-Founder (part-time)** of a shuttle-tracking platform used at McMaster University.
 
 ## Impact
 
@@ -34,7 +34,7 @@ At SOTI, I own production feature delivery for Snap across backend/server and An
 
 - **[Trac](https://georgeyazji.com/projects/Trac/)** — Firebase backend and real-time event pipeline, 5-second vehicle telemetry, 2,500+ weekly active users, and a deployed regression arrival model. Separate Kalman filtering and A* algorithms handle GPS smoothing and routing-distance calculations. B2B operating partnership with Attridge Transportation.
 - **[Self-Parking Car](https://github.com/george536/Self-Parking-Car)** — C++ pipeline in CARLA generating and labeling 10,000+ bird's-eye-view training images, plus a ResNet-50 model in PyTorch for parking-space detection. The planned reinforcement-learning phase was not completed.
-- **[RC Car Project](https://github.com/george536/RC-Car-Project)** — OpenCV and PID path following improved from ~60% to 90–95%; Gipps car-following across 4 Raspberry Pi vehicles over MQTT with 5–10 cm following gaps.
+- **[RC Car Project](https://github.com/george536/RC-Car-Project)** — OpenCV and PID path following improved from 60% to 95%; Gipps car-following across 4 Raspberry Pi vehicles over MQTT with 10 cm following gaps.
 - **[Unreal Engine Splines and 3D Lines](https://github.com/george536/Splines-and-3D-lines-Library-for-Unreal-Engine-4)** — Reusable C++ utilities for spline meshes and 3D lines.
 
 ## Earlier projects
