@@ -623,6 +623,21 @@ a {
     transition: transform 220ms ease, border-color 220ms ease, background 220ms ease;
 }
 
+.expertise-card.skill-card {
+    min-height: 0;
+    padding: 28px;
+}
+
+.skill-card h3 {
+    margin: 0 0 20px;
+    font-size: 1.25rem;
+}
+
+.skill-card .tag-list {
+    margin: 0;
+    padding: 0;
+}
+
 .expertise-card:hover {
     transform: translateY(-7px);
     border-color: rgba(102, 227, 255, 0.34);
