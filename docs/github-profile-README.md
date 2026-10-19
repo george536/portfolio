@@ -43,4 +43,4 @@ At SOTI, I own production feature delivery for Snap across backend/server and An
 
 ## Connect
 
-[Portfolio](https://georgeyazji.com/) · [Résumé](https://georgeyazji.com/documents/george-yazji-resume.pdf) · [LinkedIn](https://www.linkedin.com/in/george-yazji/) · [Email](mailto:georgeyazji3@gmail.com)
+[Portfolio](https://georgeyazji.com/) · [Résumé](https://georgeyazji.com/documents/george%20yazji%20resume.pdf) · [LinkedIn](https://www.linkedin.com/in/george-yazji/) · [Email](mailto:georgeyazji3@gmail.com)
