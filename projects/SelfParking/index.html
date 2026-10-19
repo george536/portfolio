@@ -40,6 +40,7 @@
                     <li><h3>Define parking-space geometry</h3><p>An interactive labeling tool uses RGB and depth cameras to turn selected image points into world coordinates. Each parking space is saved as an ID and four corners in JSON, then can be drawn back into the simulation for inspection.</p></li>
                     <li><h3>Automate varied captures</h3><p>The C++ capture tool moves the vehicle through a parking-lot grid and sweeps its heading from &minus;180&deg; to 180&deg; in 10&deg; steps. Collision and position checks gate capture, while received frames are matched to the target location.</p></li>
                     <li><h3>Pair images with structured metadata</h3><p>A Protocol Buffers contract carries image data, vehicle position/orientation, and the bird&rsquo;s-eye field boundary between Python and C++. The C++ processor saves images and records poses plus intersecting parking-space IDs in <code>transforms.json</code>. A Python SQLite builder organizes image metadata and parking-space corners into separate tables.</p></li>
+                    <li><h3>Develop the ResNet-50 detection model</h3><p>A custom PyTorch model uses a pretrained ResNet-50 backbone with separate heads for parking-space confidence and four-corner coordinates, supporting up to 10 spaces per image. A dataset loader joins captured images with vehicle transforms and parking-space labels from SQLite. The training prototype includes noise, blur, and color augmentation, an 80/20 training/validation split, Adam optimization, and a combined confidence and corner-regression loss. <a href="https://github.com/george536/Self-Parking-Car/tree/feature/ml_training_code/ml" target="_blank" rel="noopener noreferrer">Explore the model and training code</a>.</p></li>
                 </ol>
             </div>
             <div class="project-links">
@@ -53,24 +54,20 @@
             <p>Development screenshots showing bird&rsquo;s-eye-view generation, camera tuning, and captured image sequences. Select any image to inspect the full screenshot.</p>
             <div class="media-grid">
                 <div class="media-item">
-                    <img src="media/birds-eye-vehicle-view.png" alt="Top-down CARLA preview showing the vehicle and surrounding parking-bay markings" loading="lazy">
-                    <h6>Bird&rsquo;s-eye vehicle view &mdash; top-down capture preview</h6>
+                    <img src="../../images/selfParkingProject.jpg" alt="Captured bird's-eye image of a CARLA vehicle in a parking lot" loading="lazy">
+                    <h6>Captured image</h6>
                 </div>
                 <div class="media-item">
                     <img src="media/stitched-birds-eye-preview.png" alt="Bird's-eye development preview with joined camera regions, visible seams, and a masked vehicle footprint" loading="lazy">
-                    <h6>Stitched camera preview &mdash; alignment and vehicle masking</h6>
+                    <h6>Live bird&rsquo;s-eye view</h6>
                 </div>
                 <div class="media-item">
                     <img src="media/camera-calibration-controls.png" alt="Camera-property and bird's-eye calibration panels with position, rotation, warp dimensions, and image-offset controls beside a live preview" loading="lazy">
-                    <h6>Calibration tools &mdash; camera pose, perspective warping, and offsets</h6>
+                    <h6>Bird&rsquo;s-eye view calibration tool</h6>
                 </div>
                 <div class="media-item">
                     <img src="media/captured-image-sequence.png" alt="Folder of numbered bird's-eye parking images showing varied vehicle positions and orientations, alongside a transforms JSON file" loading="lazy">
-                    <h6>Captured image sequence &mdash; varied parking scenes and transforms file</h6>
-                </div>
-                <div class="media-item">
-                    <img src="../../images/selfParkingProject.jpg" alt="CARLA simulation scene from the parking-space detection project" loading="lazy">
-                    <h6>CARLA simulation overview</h6>
+                    <h6>Image captures across vehicle rotations and displacements</h6>
                 </div>
             </div>
         </div>
