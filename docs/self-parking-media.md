@@ -2,7 +2,7 @@
 
 ## Added October 18, 2026
 
-Gallery revision: removed the green top-down vehicle preview from the displayed gallery. The existing CARLA image is first, captioned "Captured image", followed by "Live bird's-eye view", "Bird's-eye view calibration tool", and "Image captures across vehicle rotations and displacements". The original uploaded files are retained in Git.
+Gallery revision: removed the green top-down vehicle preview from the displayed gallery. The existing CARLA image is first, captioned "Captured image", followed by "Live bird's-eye view", "Bird's-eye view calibration tool", and "Image captures across vehicle rotations and placements". The original uploaded files are retained in Git.
 
 Four supplied development screenshots now illustrate the top-down vehicle view, stitched camera/alignment preview, camera and bird's-eye calibration controls, and captured image sequence with a transforms file. They are captioned as development/capture evidence, not model predictions or ground-truth label visualizations. Original screenshots are preserved under `projects/SelfParking/media/`.
 
